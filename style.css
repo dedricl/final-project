@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700,900;&display=swap");
 
 /* Global Styles */
 
@@ -11,4 +11,92 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 24px;
+  font-size: 14px;
+  color: rgb(36, 62, 99);
+  font-weight: 600;
+}
+
+li {
+  list-style-type: none;
+}
+
+button,
+.nav__links--btn {
+  color: #fff;
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border-radius: 9999px;
+}
+
+/* Navigation Styles */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.nav__logo--area--anchor {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo--title:hover {
+  color: #6415ff;
+}
+
+.nav__logo {
+  width: 40px;
+}
+
+.nav__logo--title {
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 12px;
+  color: #243e63;
+}
+
+.nav__links {
+  display: flex;
+}
+
+.nav__link--a,
+.nav__link--b {
+  display: flex;
+}
+
+.nav__link--a a {
+  margin-right: 48px;
+}
+
+.nav__link--b {
+  margin-left: 24px;
+}
+.nav__links--anchor {
+  padding-bottom: 4px;
+  transition: all 100ms ease;
+}
+
+.nav__links--anchor:hover {
+  border-bottom: 2px solid #6415ff;
+  color: #6415ff;
+}
+
+.nav__links--btn:hover {
+  background-color: #4c14bd;
+  color: #fff;
 }
