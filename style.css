@@ -47,6 +47,7 @@ button,
   border-radius: 9999px;
   cursor: pointer;
   transition: all ease;
+  border: none;
 }
 
 img {
@@ -197,7 +198,9 @@ form {
 
 /* Service section */
 
-#services h2 {
+#services h2,
+#services h3,
+#services .section__para {
   text-align: center;
 }
 
@@ -209,12 +212,11 @@ form {
 }
 
 .section__heading {
-  padding: 20px 0;
+  padding: 16px 0;
   color: #243e63;
   font-size: 48px;
   letter-spacing: 1.2px;
   font-weight: 900;
-  text-align: center;
 }
 
 .section__para {
@@ -222,7 +224,6 @@ form {
   font-size: 18px;
   line-height: 29px;
   font-weight: 500;
-  text-align: center;
   max-width: 550px;
   margin: 0 auto;
 }
@@ -261,4 +262,38 @@ form {
   color: #7c8ba1;
   font-weight: 500;
   max-width: 70%;
+}
+
+/* Work section */
+
+.row__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.work__wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  align-items: flex-start;
+}
+
+.work__pic {
+  width: 50%;
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 4px;
+}
+
+#work .section__para {
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+
+/* Started section */
+
+.started__pic,
+.started__info {
+  width: 50%;
 }
