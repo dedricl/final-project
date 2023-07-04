@@ -15,7 +15,7 @@ html {
 
 .row {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -28,6 +28,10 @@ a {
   font-weight: 600;
 }
 
+p {
+  line-height: 1.8;
+}
+
 li {
   list-style-type: none;
 }
@@ -36,8 +40,17 @@ button,
 .nav__links--btn {
   color: #fff;
   background-color: #6415ff;
-  padding: 12px 32px;
   border-radius: 9999px;
+  cursor: pointer;
+  transition: all ease;
+}
+
+img {
+  width: 100%;
+}
+
+.primary {
+  color: #6415ff;
 }
 
 /* Navigation Styles */
@@ -74,16 +87,16 @@ nav {
   display: flex;
 }
 
-.nav__link--a,
-.nav__link--b {
+.nav__links--a,
+.nav__links--b {
   display: flex;
 }
 
-.nav__link--a a {
+.nav__links--a a {
   margin-right: 48px;
 }
 
-.nav__link--b {
+.nav__links--b {
   margin-left: 24px;
 }
 .nav__links--anchor {
@@ -96,7 +109,64 @@ nav {
   color: #6415ff;
 }
 
-.nav__links--btn:hover {
+.nav__links--btn {
+  padding: 12px 32px;
+}
+
+.nav__links--btn:hover,
+.form__button:hover {
   background-color: #4c14bd;
   color: #fff;
+}
+
+/* Header area */
+
+header {
+  display: flex;
+  padding: 96px 0;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.header__logo {
+  width: 60%;
+}
+
+.header__title {
+  font-size: 48px;
+  line-height: 60px;
+  margin: 32px 0;
+}
+
+.header__para {
+  font-size: 18px;
+  color: rgb(36, 62, 99);
+  margin-bottom: 24px;
+}
+
+input[type="email"] {
+  padding: 20px 192px 20px 32px;
+  border-radius: 9999px;
+  border: 2px solid rgb(160, 174, 192);
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(226, 232, 240);
+}
+
+form {
+  position: relative;
+}
+
+.form__button {
+  position: absolute;
+  top: 6px;
+  right: 105px;
+  border: none;
+  padding: 16px 0;
+  font-size: 16px;
+  width: 160px;
 }
