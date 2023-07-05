@@ -58,6 +58,12 @@ img {
   color: #6415ff;
 }
 
+h4 {
+  font-size: 20px;
+  color: #243e63;
+  font-weight: 600;
+}
+
 /* Navigation Styles */
 
 nav {
@@ -296,4 +302,37 @@ form {
 .started__pic,
 .started__info {
   width: 50%;
+}
+
+.started__pic {
+  padding-top: 48px;
+}
+
+.started__info {
+  padding-left: 58px;
+}
+.steps {
+  display: flex;
+  margin: 32px 0 0 0;
+}
+
+.steps__number {
+  font-size: 36px;
+  color: rgb(203, 213, 224);
+  font-weight: 600;
+}
+
+.steps__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.steps__para {
+  font-size: 14px;
+  color: rgb(113, 128, 150);
+  line-height: 28px;
+  font-weight: 500;
+  max-width: 80%;
+  margin-top: 8px;
 }
