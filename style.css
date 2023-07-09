@@ -64,6 +64,12 @@ h4 {
   font-weight: 600;
 }
 
+hr {
+  width: 100%;
+  border: 1px solid rgba(203, 213, 224, 0.5);
+  margin: 32px 0 0;
+}
+
 /* Navigation Styles */
 
 nav {
@@ -206,7 +212,10 @@ form {
 
 #services h2,
 #services h3,
-#services .section__para {
+#services .section__para,
+#pricing h2,
+#pricing h3,
+#pricing p {
   text-align: center;
 }
 
@@ -391,4 +400,213 @@ form {
 .fa-briefcase {
   background-color: #feb2b2;
   color: rgb(129, 7, 7);
+}
+
+/* Pricing */
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.plan {
+  width: 32%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding-bottom: 32px;
+  align-items: center;
+  color: #1a202c;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.plan h5 {
+  font-size: 20px;
+  padding: 32px 0;
+}
+
+.plan h2 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.plan p {
+  color: #718096;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.plan ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan li {
+  margin-bottom: 32px;
+  color: #718096;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.plan li:last-child {
+  margin-bottom: 0;
+}
+
+.plan button {
+  border: none;
+  padding: 16px 0;
+  font-size: 14px;
+  width: 160px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #6415ff;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all ease;
+  margin-top: 16px;
+}
+
+.plan__a .border_gradient {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: green;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  height: 8px;
+}
+
+.plan__a button {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.plan__b {
+  background: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+  color: #fff;
+  position: relative;
+  z-index: -1;
+}
+
+.plan__b li,
+.plan__b p {
+  color: #fff;
+}
+
+.plan__b button {
+  color: #6415ff;
+  background: #f7fafc;
+}
+
+.plan__c .border_gradient {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: green;
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+  height: 8px;
+}
+
+.plan__c button {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+/* Testimonials section */
+
+#testimonials .section__para {
+  margin: 0 0 32px 0;
+}
+
+#testimonials i {
+  margin-right: 4px;
+  color: gold;
+}
+
+#testimonials h5 {
+  font-size: 20px;
+  color: #243e63;
+  font-weight: 700;
+  margin: 24px 0 8px;
+}
+
+#testimonials h6 {
+  font-size: 16px;
+  color: #7c8ba1;
+}
+
+.testimonial__para {
+  font-size: 16px;
+  color: #4a5568;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.testimonial__customer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial__customer figure {
+  width: 100px;
+  height: 100px;
+  margin-right: 24px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.direction {
+  display: flex;
+}
+
+#testimonials .fa-arrow-left,
+#testimonials .fa-arrow-right {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6415ff;
+  background-color: #edf2f7;
+  cursor: pointer;
+}
+
+.testimonial__img--container {
+  display: flex;
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: #edf2f7;
+  margin: 16px 12px 0;
 }
