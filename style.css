@@ -382,7 +382,6 @@ form {
 
 .fa-briefcase,
 .fa-dollar-sign {
-  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -609,4 +608,60 @@ form {
   height: 24px;
   background-color: #edf2f7;
   margin: 16px 12px 0;
+}
+
+/* Get Started */
+
+#get-started .row__container {
+  background-color: #4c14bd;
+  color: #f7fafc;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  border-radius: 8px;
+}
+
+#get-started h5,
+.two_button {
+  width: 50%;
+}
+
+#get-started h5 {
+  font-size: 30px;
+  line-height: 45px;
+  max-width: 50%;
+}
+
+.two_button {
+  display: flex;
+  justify-content: center;
+}
+
+.button__a,
+.button__b {
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f7fafc;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all ease;
+}
+
+.button__a {
+  background-color: #f56565;
+  margin-right: 32px;
+}
+
+.button__a:hover {
+  background-color: #eb3d3d;
+}
+
+.button__b {
+  border: 1px solid rgb(124, 139, 161);
+}
+
+.button__b:hover {
+  background-color: #f7fafc;
+  color: #6415ff;
 }
