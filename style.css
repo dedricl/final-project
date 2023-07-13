@@ -380,8 +380,8 @@ form {
   align-items: center;
 }
 
-.fa-briefcase,
-.fa-dollar-sign {
+.values_description--title .fa-briefcase,
+.values_description--title .fa-dollar-sign {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -717,4 +717,43 @@ footer li a:hover {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #718096;
+}
+
+.footer__logo--area {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo--img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.footer__logo--name {
+  font-size: 20px;
+  color: #f7fafc;
+  font-weight: 900;
+}
+
+.footer__logo--para {
+  color: #cbd5e0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__social {
+  display: flex;
+}
+
+footer .fa-brands {
+  color: #000;
+  width: 30px;
+  background-color: #fff;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
