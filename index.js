@@ -3,5 +3,5 @@ function openMenu(){
 }
 
 function closeMenu(){
-  document.body.classList.remove('open_menu')
+  document.body.classList.remove('open__menu')
 }
