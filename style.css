@@ -945,6 +945,10 @@ footer .fa-brands {
     margin-bottom: 0;
   }
 
+  .row {
+    width: 90%;
+  }
+
   .header__title {
     font-size: 30px;
     margin: 16px 0;
@@ -1068,5 +1072,43 @@ footer .fa-brands {
 
   #pricing .section__heading {
     font-size: 48px;
+  }
+
+  .ratings {
+    display: flex;
+  }
+
+  .testimonial__para {
+    text-align: center;
+  }
+  .testimonial__customer {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #get-started h5 {
+    width: 100%;
+  }
+
+  #get-started .row__container {
+    padding: 50px 0;
+  }
+
+  .footer__row {
+    width: 80%;
+  }
+
+  .links {
+    justify-content: start;
+    row-gap: 24px;
+  }
+
+  footer ul {
+    width: calc(100% / 3);
+  }
+
+  .footer__copyright {
+    flex-direction: column;
+    row-gap: 24px;
   }
 }
