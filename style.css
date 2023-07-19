@@ -526,8 +526,12 @@ form {
   background-color: #6415ff;
   border-radius: 9999px;
   cursor: pointer;
-  transition: all ease;
   margin-top: 16px;
+  transition: all 300ms ease;
+}
+
+.plan__a button:hover {
+  background-color: red;
 }
 
 .plan__a .border_gradient {
@@ -848,7 +852,8 @@ footer .fa-brands {
 
   .header__info,
   .header__logo {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -900,7 +905,7 @@ footer .fa-brands {
   }
 
   .plan {
-    width: 55%;
+    width: 65%;
     margin-bottom: 56px;
   }
 
@@ -1110,5 +1115,76 @@ footer .fa-brands {
   .footer__copyright {
     flex-direction: column;
     row-gap: 24px;
+  }
+
+  @media (max-width: 600px) {
+    .row {
+      width: 100%;
+    }
+    .header__info,
+    .header__logo {
+      width: 100%;
+    }
+
+    .header__para {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+    .form__button {
+      position: static;
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .work__pic,
+    .started__pic,
+    .values__pic {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .started__info {
+      margin-top: 24px;
+    }
+
+    .values__info {
+      margin-top: 48px;
+    }
+
+    .values__heading {
+      font-size: 30px;
+    }
+
+    #pricing .section__heading {
+      font-size: 36px;
+    }
+
+    .testimonial__customer,
+    .testimonial__img--container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .direction {
+      margin-top: 24px;
+    }
+
+    #get-started h5 {
+      font-size: 24px;
+    }
+
+    .two_button {
+      flex-direction: column;
+    }
+
+    .button__a,
+    .button__b {
+      width: 150px;
+      font-size: 14px;
+      padding: 12px 24px;
+      margin: 16px auto;
+    }
   }
 }
