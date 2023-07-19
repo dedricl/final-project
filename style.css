@@ -265,7 +265,6 @@ form {
   color: rgb(36, 62, 99);
   opacity: 0.5;
   margin-top: 16px;
-  width: 400px;
 }
 
 /* Service section */
@@ -330,7 +329,7 @@ form {
   font-weight: 700;
   color: rgb(36, 62, 99);
   letter-spacing: 0.6px;
-  margin-bottom: 12px;
+  margin: 12px 0;
 }
 
 .widget__description {
@@ -873,6 +872,10 @@ footer .fa-brands {
     margin-top: 40px;
   }
 
+  .header__title {
+    line-height: 44px;
+  }
+
   .section__heading {
     font-size: 36px;
   }
@@ -905,7 +908,7 @@ footer .fa-brands {
   }
 
   .plan {
-    width: 65%;
+    width: 53%;
     margin-bottom: 56px;
   }
 
@@ -1145,6 +1148,10 @@ footer .fa-brands {
       margin: 0 auto;
     }
 
+    .section__heading {
+      font-size: 31px;
+    }
+
     .started__info {
       margin-top: 24px;
     }
@@ -1157,6 +1164,21 @@ footer .fa-brands {
       font-size: 30px;
     }
 
+    .widget,
+    .widget__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .widget__description {
+      text-align: center;
+    }
+
+    .plan {
+      width: 90%;
+    }
+
     #pricing .section__heading {
       font-size: 36px;
     }
@@ -1167,12 +1189,26 @@ footer .fa-brands {
       align-items: center;
     }
 
+    .testimonial__para {
+      font-size: 14px;
+      list-style: none;
+      line-height: 1.5;
+      font-weight: bold;
+    }
+
     .direction {
       margin-top: 24px;
     }
 
     #get-started h5 {
       font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 8px;
+    }
+
+    .started__info,
+    .started__pic {
+      padding-left: 0;
     }
 
     .two_button {
